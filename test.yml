@@ -1,0 +1,18 @@
+string: hello
+# comment
+map:
+  every:
+    - every
+    - good
+    - boy
+    - deserves
+    - fudge
+  good:
+    - every:    1
+      good:     2
+      boy:      3
+      deserves: 4
+      fudge:    5
+  boy: [every, good, boy, deserves, fudge]
+  deserves: every good boy deserves fudge
+  fudge: "every good boy deserves fudge"
