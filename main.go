@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	yaml2json "gopkg.in/peter-edge/yaml2json.v1"
+	yaml2json "github.com/peter-edge/go-yaml2json"
 )
 
 func main() {
