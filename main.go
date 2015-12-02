@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	yaml2json "github.com/peter-edge/go-yaml2json"
+	yaml "go.pedge.io/pkg/yaml"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	output, err := yaml2json.Convert(input)
+	output, err := yaml.ToJSON(input, yaml.ToJSONOptions{})
 	if err != nil {
 		fmt.Printf("Couldn't convert input: %v\n", err)
 		os.Exit(1)
